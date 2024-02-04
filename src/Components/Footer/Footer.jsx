@@ -28,18 +28,18 @@ function Footer() {
             </div>
             <footer>
                 <div className="left">
-                    <Link to="/" onClick={ScrollToTop}>
+                    <Link to="/Scoot/" onClick={ScrollToTop}>
                         <img src={logo}/>
                     </Link>
                     <ul>
                         <li>
-                            <Link to="/about" onClick={ScrollToTop}>About</Link>
+                            <Link to="/Scoot/about" onClick={ScrollToTop}>About</Link>
                         </li>
                         <li>
-                            <Link to="/locations" onClick={ScrollToTop}>Locations</Link>
+                            <Link to="/Scoot/locations" onClick={ScrollToTop}>Locations</Link>
                         </li>
                         <li>
-                            <Link to="/careers" onClick={ScrollToTop}>Careers</Link>
+                            <Link to="/Scoot/careers" onClick={ScrollToTop}>Careers</Link>
                         </li>
                     </ul>
                 </div>

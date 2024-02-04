@@ -32,18 +32,18 @@ function Header(){
             <div className="navbar">
                 <div className={navState ? "hamb active" : "hamb"} onClick={ToggleNavBar}></div>
                 <div className="left">
-                    <Link to="/" className='sc' onClick={ScrollToTop}>
+                    <Link to="/Scoot/" className='sc' onClick={ScrollToTop}>
                         <img src={scoot_logo}/>
                     </Link>
                     <ul>
                         <li>
-                            <Link to="/about" onClick={ScrollToTop}>About</Link>
+                            <Link to="/Scoot/about" onClick={ScrollToTop}>About</Link>
                         </li>
                         <li>
-                            <Link to="/locations" onClick={ScrollToTop}>Locations</Link>
+                            <Link to="/Scoot/locations" onClick={ScrollToTop}>Locations</Link>
                         </li>
                         <li>
-                            <Link to="/careers" onClick={ScrollToTop}>Careers</Link>
+                            <Link to="/Scoot/careers" onClick={ScrollToTop}>Careers</Link>
                         </li>
                     </ul>
                 </div>
@@ -54,13 +54,13 @@ function Header(){
                 <div className={navState ? "resp active" : "resp"}>
                     <ul>
                         <li>
-                            <Link to="/about" onClick={ScrollToTop}>About</Link>
+                            <Link to="/Scoot/about" onClick={ScrollToTop}>About</Link>
                         </li>
                         <li>
-                            <Link to="/locations" onClick={ScrollToTop}>Locations</Link>
+                            <Link to="/Scoot/locations" onClick={ScrollToTop}>Locations</Link>
                         </li>
                         <li>
-                            <Link to="/careers" onClick={ScrollToTop}>Careers</Link>
+                            <Link to="/Scoot/careers" onClick={ScrollToTop}>Careers</Link>
                         </li>
                     </ul>
                     <Scroll to="footer" smooth={true} duration={800} onClick={ToggleNavBar}>
