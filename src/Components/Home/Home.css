@@ -1,0 +1,244 @@
+section{
+    overflow-x: hidden;
+}
+
+.sec1 .back{
+    position: relative;
+    background-image: url('../assets/images/home-hero-desktop.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 40rem;
+}
+
+.sec1 .back .content{
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+}
+
+.sec1 .back .content h1{
+    color: white;
+    font-size: var(--xlarge);
+    line-height: 3.5rem;
+    width: 31.25rem;
+    letter-spacing: -0.15625rem;
+}
+
+.sec1 .back .content p{
+    color: #fff;
+    font-family: Lexend Deca;
+    font-size: var(--small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    width: 25.3125rem;
+    margin-left: 6rem;
+    margin-top: 2.5rem;
+}
+
+.sec1 .back .content button{
+    outline: none;
+    border: none;
+    color: #fff;
+    background: var(--yellow);
+    font-size: var(--small);
+    padding: 0.87rem 2.47rem;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    margin-left: 6rem;
+    transition: all ease .3s;
+}
+
+.sec1 .back .content button:hover{
+    color: var(--yellow);
+    background: #fff;
+    box-shadow: inset 0 0 0 3px var(--yellow);
+}
+
+.sec1 .back img{
+    position: absolute;
+}
+
+.sec1 .back .line{
+    top: 22.12rem;
+}
+
+.sec1 .back .right-arrow{
+    top: 22.19rem;
+    right: 18rem;
+}
+
+.sec1 .back .white-circles{
+    top: 27rem;
+    right: -3rem;
+}
+
+.sec2{
+    padding-top: 13rem;
+    margin-bottom: 12.5rem;
+}
+
+.sec2 .grey-line{
+    width: 60rem;
+    height: 1rem;
+    background: #E5ECF4;
+}
+
+.sec2 .content{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 2rem;
+    margin-left: 10.31rem;
+    top: -3.5rem;
+}
+
+.sec2 .content .col{
+    width: 21.875rem;
+}
+
+.sec2 .content div h3{
+    margin-top: 2rem;
+    margin-bottom: 1.7rem;
+    font-size: var(--small);
+    letter-spacing: -0.06694rem;
+    color: var(--dark-navy);
+}
+
+.sec2 .content div p{
+    color: var(--dim-grey);
+    font-family: 'Lexend Deca';
+    font-size: var(--small);
+    font-weight: 400;
+    line-height: 1.5625rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .sec1 .back .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        left: 0;
+        top: 8rem;
+    }
+    .sec1 .back .content h1{
+        text-align: center;
+    }
+    .sec1 .back .content p{
+        margin-left: 0;
+        text-align: center;
+        width: 35.8125rem;
+    }
+    .sec1 .back .content button{
+        margin-left: 0;
+    }
+    .sec1 .back .line{
+        display: none;
+    }
+    .sec1 .back .right-arrow{
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 1rem;
+    }
+    .sec1 .back .white-circles{
+        top: auto;
+        bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .sec2{
+        padding: 0;
+        position: relative;
+        padding-bottom: 4rem;
+    }
+    .sec2 .grey-line{
+        height: 38rem;
+        width: 1rem;
+        margin-left: 9rem;
+    }
+    .sec2 .content{
+        position: absolute;
+        flex-direction: column;
+        top: 7rem;
+        margin-left: 0;
+        left: 6.5rem;
+    }
+    .sec2 .content .col{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sec1 .back{
+        background-image: url('../assets/images/home-hero-tablet.jpg');
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .sec2 .grey-line{
+        display: none;
+    }
+    .sec2 .content{
+        position: static;
+        margin-top: 7.5rem;
+    }
+    .sec2 .content .col{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        text-align: center;
+        width: 19.4375rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .sec1 .back .content{
+        top: 6rem;
+    }
+    .sec1 .back .content h1 {
+        width: 19.4375rem;
+        font-size: 2.5rem;
+    }
+    .sec1 .back .content p{
+        width: 19.4375rem;
+    }
+    .sec1 .back .right-arrow{
+        bottom: 1rem;
+        left: -20rem;
+    }
+    .sec1 .back .white-circles{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sec1 .back .content p{
+        width: 90%;
+    }
+    .sec1 .back .right-arrow{
+        bottom: 0.5rem;
+    }
+    .sec1 .back .content button{
+        margin-top: 1rem;
+    }
+    .sec2 .content div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .sec2 .content div p{
+        width: 85%;
+    }
+    .sec2{
+        margin-bottom: 0;
+    }
+}

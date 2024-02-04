@@ -1,0 +1,39 @@
+.hero{
+    background-image: url("../../assets/images/about-hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 12.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 10.31rem;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 7.5rem;
+    overflow-x: hidden;
+}
+
+.hero.other{
+    background-image: url("../../assets/images/careers-locations-hero-desktop.jpg");
+}
+
+.hero h1{
+    color: #fff;
+    font-size: var(--xlarge);
+    letter-spacing: -0.15625rem;
+}
+
+.hero img{
+    position: relative;
+    right: -2rem;
+}
+
+@media screen and (max-width: 460px) {
+    .hero{
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .hero img{
+        display: none;
+    }
+}

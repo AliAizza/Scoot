@@ -1,0 +1,16 @@
+.faqs{
+    color: var(--dark-navy);
+    text-align: center;
+    font-size: var(--large);
+    letter-spacing: -0.13394rem;
+    margin-bottom: 4rem;
+}
+
+.values-title{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark-navy);
+    line-height: 3rem;
+    letter-spacing: -0.13394rem;
+    margin-bottom: 6.5rem;
+}

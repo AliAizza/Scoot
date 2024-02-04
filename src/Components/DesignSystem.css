@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --yellow: #FCB72B;
+    --dark-navy: #495567;
+    --dim-grey: #939CAA;
+    --light-grey: #E5ECF4;
+    --snow: #F2F5F9;
+    --light-yellow: #FFF4DF;
+
+    --small: 0.9375rem;
+    --medium: 1.5rem;
+    --large: 3rem;
+    --xlarge: 3.5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+body, section{
+    overflow-x: hidden;
+}
+ 
+.space{
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 610px) {
+    .space{
+        padding-bottom: 3.8rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    :root{
+        --xlarge: 2.5rem;
+        --large: 2rem;
+        --medium: 1.25rem
+    }
+}

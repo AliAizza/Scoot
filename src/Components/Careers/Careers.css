@@ -1,0 +1,65 @@
+.why{
+    color: var(--dark-navy);
+    text-align: center;
+    font-size: var(--large);
+    letter-spacing: -0.13394rem;
+    margin-bottom: 7rem;
+}
+
+.job-container{
+    display: flex;
+    background: var(--snow);
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10rem 1.5rem 10rem;
+    padding: 2rem 4rem 2rem 2.5rem;
+}
+
+.job-container .job-and-city h3{
+    color: var(--dark-navy);
+    font-size: 1.125rem;
+    letter-spacing: -0.06694rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-container .job-and-city p{
+    color: var(--dark-navy);
+    font-family: 'Lexend Deca';
+    font-size: var(--small);
+    font-weight: 400;
+}
+
+.job-container button{
+    outline: none;
+    border: none;
+    color: #fff;
+    background: var(--yellow);
+    font-size: var(--small);
+    padding: 0.88rem 4rem;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.job-container button:hover{
+    color: var(--yellow);
+    background: var(--snow);
+    box-shadow: inset 0 0 0 3px var(--yellow);
+}
+
+@media screen and (max-width: 900px) {
+    .job-container{
+        margin: 0 2.5rem 1.5rem 2.5rem;
+        padding: 2rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .job-container{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .job-container button{
+        margin-top: 1rem;
+    }
+}
